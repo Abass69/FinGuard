@@ -1,0 +1,44 @@
+{
+  "source": "https://raw.githubusercontent.com/IBM/AMLSim/7338a4bcb1af9bcfea2201ad7daccfe2a4d569ca/sample/20K_fanin200cycle200.tgz",
+  "commit": "7338a4bcb1af9bcfea2201ad7daccfe2a4d569ca",
+  "label_definition": "Either endpoint is an isFraud=1 account; NOT transaction-level laundering ground truth",
+  "rows": 120558,
+  "accounts": 20000,
+  "positive_rate": 0.2972594104082682,
+  "time_unit": "simulation step, not assumed seconds or days",
+  "missing_required": 0,
+  "files_sha256": {
+    "transactions.csv": "5f650f8b4ce7cc328f1334c65e719496920c422191adbf9fe67f8ae7cfa99fd5",
+    "nodes.csv": "c43ac5dccc8bd18f2a67f13d7aaa2291664291410b911c00f8577a071d2a2113"
+  },
+  "splits": {
+    "train": {
+      "n": 67450,
+      "min_step": 1,
+      "max_step": 80,
+      "positive_rate": 0.2798369162342476
+    },
+    "validation": {
+      "n": 23113,
+      "min_step": 90,
+      "max_step": 110,
+      "positive_rate": 0.3079652143815169
+    },
+    "test": {
+      "n": 11853,
+      "min_step": 120,
+      "max_step": 149,
+      "positive_rate": 0.3496161309373155
+    }
+  },
+  "excluded_gap_rows": 18142,
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.4.1",
+    "networkx": "3.7",
+    "fastapi": "0.141.1",
+    "streamlit": "1.67.0"
+  }
+}

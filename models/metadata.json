@@ -1,0 +1,25 @@
+{
+  "features": [
+    "log_amount",
+    "src_count",
+    "dst_count",
+    "src_amount_ratio",
+    "dst_amount_ratio",
+    "src_in_degree",
+    "src_out_degree",
+    "dst_in_degree",
+    "dst_out_degree",
+    "reverse_edge",
+    "closes_triangle",
+    "src_flow_ratio"
+  ],
+  "threshold": 0.7142661213874817,
+  "window": 30,
+  "model": "XGB full",
+  "label_definition": "Either endpoint is an isFraud=1 account; NOT transaction-level laundering ground truth",
+  "version": "0.1.0",
+  "data_sha256": {
+    "transactions.csv": "5f650f8b4ce7cc328f1334c65e719496920c422191adbf9fe67f8ae7cfa99fd5",
+    "nodes.csv": "c43ac5dccc8bd18f2a67f13d7aaa2291664291410b911c00f8577a071d2a2113"
+  }
+}

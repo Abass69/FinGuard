@@ -1,0 +1,23 @@
+{
+  "XGB transaction": {
+    "ap_delta_full_minus_comparator": 0.0014904268549167377,
+    "paired_block_ci95": [
+      -0.0008954901115633129,
+      0.004360549499997868
+    ]
+  },
+  "XGB no cycles": {
+    "ap_delta_full_minus_comparator": 0.0003306939445798518,
+    "paired_block_ci95": [
+      -0.000756241411896083,
+      0.0010813348202338702
+    ]
+  },
+  "XGB graph only": {
+    "ap_delta_full_minus_comparator": 0.1218828524241371,
+    "paired_block_ci95": [
+      0.11116705057138643,
+      0.13299714667127832
+    ]
+  }
+}

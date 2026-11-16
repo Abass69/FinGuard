@@ -1,0 +1,42 @@
+{
+  "transfers": 25,
+  "hybrid_alerts": 8,
+  "model_alerts": 5,
+  "last_transfer": {
+    "tx_id": "out-04",
+    "step": 25,
+    "sender": "hub",
+    "receiver": "exit-4",
+    "amount": 1900.0,
+    "score": 0.6994878649711609,
+    "flagged": true,
+    "reasons": [
+      "Alert policy triggered: gather_scatter_rule",
+      "Sender received from 20 distinct counterparties in the previous 30 steps",
+      "Outgoing total including this transfer is 95% of recent incoming value",
+      "Model contribution: src_in_degree = +0.810 log-odds",
+      "Model contribution: dst_count = -0.416 log-odds",
+      "Model contribution: src_amount_ratio = +0.238 log-odds"
+    ],
+    "model_version": "515fce3caae936fae57c23b028ea3ece07d2164edbcf4a1f837480b9305654eb",
+    "threshold": 0.7142661213874817,
+    "triggers": [
+      "gather_scatter_rule"
+    ],
+    "contributions": {
+      "log_amount": -0.07308247685432434,
+      "src_count": 0.20939791202545166,
+      "dst_count": -0.4161495268344879,
+      "src_amount_ratio": 0.23790404200553894,
+      "dst_amount_ratio": -0.022804316133260727,
+      "src_in_degree": 0.8096249103546143,
+      "src_out_degree": -1.9407081708777696e-05,
+      "dst_in_degree": 0.08662573993206024,
+      "dst_out_degree": 0.043321169912815094,
+      "reverse_edge": -0.0018294877372682095,
+      "closes_triangle": -0.0005932890926487744,
+      "src_flow_ratio": -0.03302306309342384,
+      "base_value": 0.005488067399710417
+    }
+  }
+}
